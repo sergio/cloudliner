@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><!-- <editor>
+      <sidebar width="197"/>
+      <column name="text" width="762"/>
+    </editor> -->
+    <title>hsmstack</title>
+    <dateCreated>Mon, 14 Dec 2020 07:01:14 GMT</dateCreated>
+    <expansionState>1,2,3,5,6,8,9,11,12</expansionState>
+    <vertScrollState>0</vertScrollState>
+    <windowTop>682</windowTop>
+    <windowLeft>352</windowLeft>
+    <windowRight>1135</windowRight>
+    <windowBottom>1057</windowBottom>
+  </head>
+  <body>
+    <outline text="AWSTemplateFormatVersion: 2010-09-09"/>
+    <outline text="Resources">
+      <outline text="HsmClientEc2Role" _note="Type: AWS::IAM::Role">
+        <outline text="Properties">
+          <outline text="RoleName: &quot;MyRole&quot;"/>
+        </outline>
+      </outline>
+      <outline text="HsmClient" _note="Type: AWS::IAM::InstanceProfile">
+        <outline text="Properties">
+          <outline text="RoleName: ARole"/>
+        </outline>
+      </outline>
+      <outline text="LaunchTemplate" _note="Type: AWS::EC2::LaunchTemplate">
+        <outline text="Properties">
+          <outline text="AmiId: ami-34829347892"/>
+        </outline>
+      </outline>
+      <outline text="AutoScalingGroup" _note="Type: AWS::EC2::AutoScalingGroup">
+        <outline text="Properties">
+          <outline text="Min: 3"/>
+        </outline>
+      </outline>
+    </outline>
+  </body>
+</opml>
