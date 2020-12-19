@@ -2,4 +2,4 @@ build:
 	mix escript.build
 
 install: build
-	cp ./cloudliner ~/bin
+	cp -f ./cloudliner ~/bin/cloudliner
