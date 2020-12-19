@@ -26,8 +26,7 @@ defmodule Cloudliner.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-        {:opml, path: "../opml"},
-        {:outline, path: "../outline"},
+      {:sweet_xml, "~> 0.6.6"},
     ]
   end
 end
