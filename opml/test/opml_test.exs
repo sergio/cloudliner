@@ -6,7 +6,7 @@ defmodule OpmlTest do
       {
         """
         <opml><body>
-          <outline text="root"/>
+          <outline text="root" _status="checked" />
         </body></opml>
         """,
         [{"root"}]
@@ -14,8 +14,8 @@ defmodule OpmlTest do
       {
         """
         <opml><body>
-          <outline text="root1"/>
-          <outline text="root2"/>
+          <outline text="root1" _status="checked" />
+          <outline text="root2" _status="checked"/>
         </body></opml>
         """,
         [{"root1"}, {"root2"}]
@@ -38,26 +38,26 @@ defmodule OpmlTest do
             <windowBottom>1057</windowBottom>
           </head>
           <body>
-            <outline text="AWSTemplateFormatVersion: 2010-09-09"/>
-            <outline text="Resources">
-              <outline text="HsmClientEc2Role" _note="Type: AWS::IAM::Role">
-                <outline text="Properties">
-                  <outline text="RoleName: &quot;MyRole&quot;"/>
+            <outline text="AWSTemplateFormatVersion: 2010-09-09" _status="checked" />
+            <outline text="Resources" _status="checked">
+              <outline text="HsmClientEc2Role" _note="Type: AWS::IAM::Role" _status="checked">
+                <outline text="Properties" _status="checked">
+                  <outline text="RoleName: &quot;MyRole&quot;" _status="checked"/>
                 </outline>
               </outline>
-              <outline text="HsmClient" _note="Type: AWS::IAM::InstanceProfile">
-                <outline text="Properties">
-                  <outline text="RoleName: ARole"/>
+              <outline text="HsmClient" _note="Type: AWS::IAM::InstanceProfile" _status="checked">
+                <outline text="Properties" _status="checked">
+                  <outline text="RoleName: ARole" _status="checked"/>
                 </outline>
               </outline>
-              <outline text="LaunchTemplate" _note="Type: AWS::EC2::LaunchTemplate">
-                <outline text="Properties">
-                  <outline text="AmiId: ami-34829347892"/>
+              <outline text="LaunchTemplate" _note="Type: AWS::EC2::LaunchTemplate" _status="checked">
+                <outline text="Properties" _status="checked">
+                  <outline text="AmiId: ami-34829347892" _status="checked"/>
                 </outline>
               </outline>
-              <outline text="AutoScalingGroup" _note="Type: AWS::EC2::AutoScalingGroup">
-                <outline text="Properties">
-                  <outline text="Min: 3"/>
+              <outline text="AutoScalingGroup" _note="Type: AWS::EC2::AutoScalingGroup" _status="checked">
+                <outline text="Properties" _status="checked">
+                  <outline text="Min: 3" _status="checked"/>
                 </outline>
               </outline>
             </outline>
