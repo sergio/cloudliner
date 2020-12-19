@@ -1,8 +1,6 @@
 defmodule OpmlTest do
   use ExUnit.Case
 
-  import SweetXml, only: [sigil_x: 2]
-
   test "parse xml to outline data structure" do
     test_cases = [
       {
@@ -79,7 +77,7 @@ defmodule OpmlTest do
     ]
 
     for {input, expected} <- test_cases do
-      assert parse(input) == expected
+      assert Opml.parse(input) == expected
     end
   end
 
