@@ -17,17 +17,20 @@ defmodule Outline do
   defp render({label}, level) do
     render({label, []}, level)
   end
- 
+
   defp render({label, []}, level) do
     ["#{indent(level)}#{label}"]
   end
 
-  defp render({label, contents}, level) do
-    ["#{indent(level)}#{label}:"] ++ render(contents, level + 1)
+  defp render({label, nonempty_contents}, level) do
+    ["#{indent(level)}#{format_as_container(label)}"] ++ render(nonempty_contents, level + 1)
   end
+
+  defp format_as_container("-"), do: "-"
+  defp format_as_container(label), do: "#{label}:"
 
   defp indent(level) do
     String.duplicate("  ", level)
   end
-  
+
 end
