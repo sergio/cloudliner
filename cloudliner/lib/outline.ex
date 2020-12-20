@@ -27,7 +27,13 @@ defmodule Outline do
   end
 
   defp format_as_container("-"), do: "-"
-  defp format_as_container(label), do: "#{label}:"
+  defp format_as_container(label) do
+    if String.ends_with?(label, ":") do
+      label
+    else
+      "#{label}:"
+    end
+  end
 
   defp indent(level) do
     String.duplicate("  ", level)
