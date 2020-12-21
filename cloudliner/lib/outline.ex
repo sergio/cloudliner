@@ -30,7 +30,7 @@ defmodule Outline do
   defp format_as_container(label) do
     # If ends with '|' (yaml multiline starter)
     # or if it ends with ':' already, return unaltered.
-    if String.match?(label, ~r"[:\|]\s+$") do
+    if String.match?(label, ~r"[:\|]\s*$") do
       label
     else
       "#{label}:"
