@@ -27,6 +27,7 @@ defmodule Cloudliner.MixProject do
   defp deps do
     [
       {:sweet_xml, "~> 0.6.6"},
+      {:exoml, "~> 0.0.4"},
     ]
   end
 end

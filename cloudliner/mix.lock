@@ -1,3 +1,4 @@
 %{
+  "exoml": {:hex, :exoml, "0.0.10", "f75e4913a9eadd767964cc7910e742f84ade58a72df898e74a331c727f65fd7f", [:mix], [], "hexpm", "53e4a76d524fb471022d6d7c6fc716a9bb25ebadc516c16fcf17ad83cc9c519d"},
   "sweet_xml": {:hex, :sweet_xml, "0.6.6", "fc3e91ec5dd7c787b6195757fbcf0abc670cee1e4172687b45183032221b66b8", [:mix], [], "hexpm", "2e1ec458f892ffa81f9f8386e3f35a1af6db7a7a37748a64478f13163a1f3573"},
 }
